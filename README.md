@@ -21,17 +21,23 @@ This is how the JSON Object in response appears.
 ```JSON
 {
   "developer": "noobshubham",
-  "data": [
+  "student_club": [
     {
       "title": "CCA Club - Aptitude Relay - Prelims",
-      "image_poster": "https://lh4.googleusercontent.com/oMVRtcwo6s2gUegFFm69n3djda1c63bh2s27A7WZliHlX5Nf8T2rq98BxyinpfdkUHmQnaGbfsAT7M82uNXyZNgZpIsQrUq8szDB-EBgVSF5U1uL9Xu4gR9IIL38L3VAGQ=w1280",
+      "start_date": "12th July 2023, 01.00 PM",
+      "end_date": "12th July 2023, 04.00 PM",
+      "image_poster": "https://lh6.googleusercontent.com/ey5Zmf56T1pi3b7Oq52albn08KOfEqa3VMU7oAEVnXkV5_5uMZZLIuV4R0qj35euGUCajBtvm8xOS20aXbulSLggK_Kys4-n9blraU95mc5uLqgquDQn415W9vYW5Qn0Cw=w1280",
       "registration_link": "https://forms.gle/RgWEtyF12cfhL2ed8"
-    },
+    }
+  ],
+  "depart_level": [
     {
-      "title": "FEEE Club - Poster Designing",
-      "image_poster": "https://lh3.googleusercontent.com/DucAjz0hS1zE0eWM67bIfx8OdmvWne-wgfzi4psJIK99cMpCiETTrhvhRo-iijo0HP5qJf96lqEkqjWGWJOJ4yk=w1280",
-      "registration_link": "https://forms.gle/RjhQxkDYekZtkXs47"
-    },
+      "title": "IIC - Dept. of CSE: Workshop on Prototype Validation - Achieving Value Proposition Fit & Business Fit",
+      "start_date": "20th July 2023, 02.00 PM",
+      "end_date": "20th July 2023, 03.00 PM",
+      "image_poster": "https://lh4.googleusercontent.com/8EtmVImFMwZuiY6Z0OHpNXC7zmaRrewFlb1GQsUllVQz7JWQF5uerhmbmoi9qPwJNAVJFke9SAskx8u04dEGBmY=w1280",
+      "registration_link": null
+    }
   ],
   "success": true
 }
