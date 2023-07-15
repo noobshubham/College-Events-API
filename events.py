@@ -3,7 +3,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def scrape_events():
+def events():
   """Scrapes the events from the CMRIT student clubs website."""
   url = "https://sites.google.com/cmrit.ac.in/cmritstudentclubs/events"
   response = requests.get(url)
@@ -29,6 +29,6 @@ def scrape_events():
   return events
 
 if __name__ == "__main__":
-  events = scrape_events()
+  events = events()
   for event in events:
     print(event)

@@ -1,7 +1,7 @@
 # Coded by Shubham on 15 July 2023
 
 from fastapi import FastAPI
-import scrape_events
+import events
 
 app = FastAPI()
 
@@ -11,5 +11,5 @@ async def home():
 
 @app.get("/events")
 async def get_events():
-    return scrape_events.scrape_events()
+    return events.events()
 
