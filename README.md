@@ -1,4 +1,4 @@
-College-Events-API
+College Events API
 ===================
 
 Response Format
