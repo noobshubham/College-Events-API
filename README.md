@@ -40,12 +40,12 @@ Install all dependencies listed in _requirements.txt_ file.
 1. To install all dependencies run
 
    ```bash
-   $ pip3 install -r requirements.txt
+   pip install -r requirements.txt
    ```
 
 2. Start the server
 
    ```bash
-   $ python -m uvicorn app:app --reload
+   python -m uvicorn app:app --reload
    ```
 
