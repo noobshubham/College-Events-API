@@ -1,9 +1,17 @@
 # Coded by Shubham on 15 July 2023
 
 from fastapi import FastAPI
-import events
+import student_club
+import depart_level
 
 app = FastAPI()
+
+eventsDictionary = {
+    'developer': 'noobshubham',
+    'student_club': [],
+    'depart_level': [],
+    'success': True
+}
 
 @app.get('/')
 async def home():
@@ -11,11 +19,7 @@ async def home():
 
 @app.get("/events")
 async def get_events():
-    eventsDictionary = {
-        'developer': 'noobshubham',
-        'data': [],
-        'success': True
-    }
-    eventsDictionary['data'] = events.events()
+    eventsDictionary['student_club'] = student_club.events()
+    eventsDictionary['depart_level'] = depart_level.events()
     return eventsDictionary
-    
+
