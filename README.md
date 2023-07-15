@@ -1,6 +1,13 @@
 College Events API
 ===================
 
+Usage
+---------
+
+Send a get request to the events endpoint.
+
+Example - https://college-event-api.onrender.com/events
+
 Response Format
 -------------------
 
@@ -24,3 +31,21 @@ This is how the JSON Object in response appears.
   "success": true
 }
 ```
+
+Setup
+------
+
+Install all dependencies listed in _requirements.txt_ file.
+
+1. To install all dependencies run
+
+   ```bash
+   $ pip3 install -r requirements.txt
+   ```
+
+2. Start the server
+
+   ```bash
+   $ python -m uvicorn app:app --reload
+   ```
+
