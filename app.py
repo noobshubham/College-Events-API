@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get('/')
 async def home():
-    return 'The CMRIT Student Club Activities API is UP!<br><br>Maintained and Developed by <a href="https://github.com/noobshubham">SHUBHAM</a>'
+    return "The CMRIT Student Club API is UP! Maintained and Developed by SHUBHAM from MCA."
 
 @app.get("/events")
 async def get_events():
@@ -18,3 +18,4 @@ async def get_events():
     }
     eventsDictionary['data'] = events.events()
     return eventsDictionary
+    
