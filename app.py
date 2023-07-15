@@ -11,5 +11,10 @@ async def home():
 
 @app.get("/events")
 async def get_events():
-    return events.events()
-
+    eventsDictionary = {
+        'developer': 'noobshubham',
+        'data': [],
+        'success': True
+    }
+    eventsDictionary['data'] = events.events()
+    return eventsDictionary
