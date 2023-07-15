@@ -11,6 +11,8 @@ Send a get request to the events endpoint.
 
 Example - https://college-event-api.onrender.com/events
 
+For more information, [Documentation](https://college-event-api.onrender.com/docs)
+
 Response Format
 -------------------
 
