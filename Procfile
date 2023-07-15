@@ -1,1 +1,0 @@
-web: uvicorn app:app --timeout 100 --log-file=-
