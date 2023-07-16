@@ -1,7 +1,7 @@
 College Events API
 ===================
 
-This API may retrieve event activities from the CMRIT Student Clubs Website and return them in JSON format.
+This API retrieve event activities from the CMRIT Student Clubs Website and return them in JSON format.
 
 
 Usage
