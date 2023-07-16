@@ -12,7 +12,7 @@ def events():
   soup = BeautifulSoup(response.content, "html.parser")
 
   events = []
-  for event in soup.find_all("section", class_="yaqOZd qeLZfd", limit=10):
+  for event in soup.find_all("section", class_="yaqOZd qeLZfd", limit=15):
     title = event.find("p", class_="zfr3Q CDt4Ke").text
     start_date_and_time = event.find_all("p", class_="zfr3Q CDt4Ke")[1].text
     end_date_and_time = event.find_all("p", class_="zfr3Q CDt4Ke")[2].text
@@ -40,7 +40,6 @@ def events():
   return events
 
 if __name__ == "__main__":
-  events = events()
-  for event in events:
+  for event in events():
     print(event)
 
