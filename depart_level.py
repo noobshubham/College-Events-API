@@ -2,7 +2,9 @@
 
 import requests
 from bs4 import BeautifulSoup
+from functools import lru_cache
 
+@lru_cache(maxsize=None)
 def events():
   """Scrapes the events from the CMRIT Department & Institute Level."""
   url = "https://sites.google.com/cmrit.ac.in/department-institute-level-act/"
