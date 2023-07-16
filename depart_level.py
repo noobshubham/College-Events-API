@@ -34,7 +34,6 @@ def events():
   return events
 
 if __name__ == "__main__":
-  events = events()
-  for event in events:
+  for event in events():
     print(event)
 
