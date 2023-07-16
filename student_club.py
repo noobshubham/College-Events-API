@@ -14,13 +14,19 @@ def events():
     title = event.find("p", class_="zfr3Q CDt4Ke").text
     start_date_and_time = event.find_all("p", class_="zfr3Q CDt4Ke")[1].text
     end_date_and_time = event.find_all("p", class_="zfr3Q CDt4Ke")[2].text
-    image_poster = event.find("img")["src"] 
-    registration_link = event.find("a", class_="XqQF9c")
-    if registration_link and registration_link["href"]:
-        registration_link = registration_link["href"]
-    else:
-        registration_link = None
-
+    
+    # exception handling for image poster
+    try:
+       image_poster = event.find("img")["src"]
+    except:
+       image_poster = None 
+  
+    # exception handling for registration link
+    try:
+      registration_link = event.find("a", class_="XqQF9c")["href"]
+    except:
+       registration_link = None
+    
     events.append({
         "title": title.strip(),
         "start_date": start_date_and_time.split(":")[1].strip(),
