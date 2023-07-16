@@ -23,20 +23,20 @@ This is how the JSON Object in response appears.
   "developer": "noobshubham",
   "student_club": [
     {
-      "title": "CCA Club - Aptitude Relay - Prelims",
-      "start_date": "12th July 2023, 01.00 PM",
-      "end_date": "12th July 2023, 04.00 PM",
-      "image_poster": "https://lh6.googleusercontent.com/ey5Zmf56T1pi3b7Oq52albn08KOfEqa3VMU7oAEVnXkV5_5uMZZLIuV4R0qj35euGUCajBtvm8xOS20aXbulSLggK_Kys4-n9blraU95mc5uLqgquDQn415W9vYW5Qn0Cw=w1280",
-      "registration_link": "https://forms.gle/RgWEtyF12cfhL2ed8"
+      "title": "Coding Ninjas Club - Connect to Glory",
+      "start_date": "19th July 2023, 02.30 PM",
+      "end_date": "19th July 2023, 03.30 PM",
+      "image_poster": "https://lh4.googleusercontent.com/YyJNDz3QMCA2GwGNmA-BRTbQhDA0E6pAr1vgbKmJMesyKe5F49kQAv14TU4o7H9K3vi3I70ri3CURhz_Mc2Z06s=w1280",
+      "registration_link": "https://forms.gle/CnAwoS4FhzUWtMd47"
     }
   ],
   "depart_level": [
     {
-      "title": "IIC - Dept. of CSE: Workshop on Prototype Validation - Achieving Value Proposition Fit & Business Fit",
-      "start_date": "20th July 2023, 02.00 PM",
-      "end_date": "20th July 2023, 03.00 PM",
-      "image_poster": "https://lh4.googleusercontent.com/8EtmVImFMwZuiY6Z0OHpNXC7zmaRrewFlb1GQsUllVQz7JWQF5uerhmbmoi9qPwJNAVJFke9SAskx8u04dEGBmY=w1280",
-      "registration_link": null
+      "title": "Dept. of MCA: Guest Talk on GIT and JS",
+      "start_date": "22nd July 2023, 10.30 AM",
+      "end_date": "22nd July 2023, 12.00 PM",
+      "image_poster": "https://lh5.googleusercontent.com/hc0KzUpffwVLmKlXZPaqAOzA5IC0Nc_ZiPph-v2ku7sOlDrxHgKKZ0j3hKfzMMdF6SWT3M9BwqDe2rDrNueEUAIFyXKw264_fJFFPtuAbqrL2pzYVmBYI9NqLEROnCuCEQ=w1280",
+      "registration_link": "https://forms.gle/LYnf9zDCwEEpp5r88"
     }
   ],
   "success": true
