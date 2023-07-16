@@ -1,10 +1,17 @@
 # Coded by Shubham on 15 July 2023
 
+import asyncio
 from fastapi import FastAPI
 import student_club
 import depart_level
 
 app = FastAPI()
+
+async def get_student_club_events():
+    return await asyncio.to_thread(student_club.events)
+
+async def get_depart_level_events():
+    return await asyncio.to_thread(depart_level.events)
 
 eventsDictionary = {
     'developer': 'noobshubham',
@@ -19,7 +26,9 @@ async def home():
 
 @app.get("/events")
 async def get_events():
-    eventsDictionary['student_club'] = student_club.events()
-    eventsDictionary['depart_level'] = depart_level.events()
+    tasks = [get_student_club_events(), get_depart_level_events()]
+    results = await asyncio.gather(*tasks)
+    eventsDictionary['student_club'] = results[0]
+    eventsDictionary['depart_level'] = results[1]
     return eventsDictionary
 
