@@ -22,7 +22,7 @@ eventsDictionary = {
 
 @app.get('/')
 async def home():
-    return "The CMRIT Student Club API is UP! Maintained and Developed by SHUBHAM from MCA."
+    return "The CMRIT Events API is UP! Maintained and Developed by SHUBHAM from MCA."
 
 @app.get("/events")
 async def get_events():
